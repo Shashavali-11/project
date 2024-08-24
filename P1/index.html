@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Shashavali" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+    <meta
+      name="description"
+      content="The official website for The Sugar Rush Bakery"
+    />
+
+    <title>The Sugar Rush Bakery</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/1669/1669110.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .row {
+        margin-left: -5px;
+        margin-right: -5px;
+      }
+
+      .column {
+        float: left;
+        width: 90%;
+        padding: 5px;
+      }
+
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      table,
+      tr,
+      th,
+      td {
+        border: 2px solid blue;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to The Sugar Rush Bakery</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about"
+              >About <abbr title="The Sugar Rush Bakery"> SRB</abbr></a
+            >
+          </li>
+          <li>
+            <a href="#menu">Our Menu</a>
+          </li>
+          <li>
+            <a href="hours.html">Store Hours</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <figure>
+        <img
+          src="./bakery.jpg"
+          alt="Cake and Bread"
+          title="We love Chease Pizza!"
+          height="200"
+          width="300"
+        />
+        <figcaption>Cake and Bread</figcaption>
+      </figure>
+    </header>
+    <hr />
+    <main>
+      <!-- our content -->
+      <article id="about">
+        <h2>About <abbr title="The Sugar Rush Bakery">SRB</abbr></h2>
+        <p>
+          <abbr title="The Sugar Rush Bakery">SRB</abbr> was founded in
+          <time datetime="2024">2024</time>. The Sugar Rush Bakery is a charming
+          spot offering a variety of freshly baked cakes, cookies, and desserts.
+          Known for its
+          <strong> quality ingredients and creative flavors</strong> 🍪🍪🍪.
+          It’s a go-to for sweet indulgences and special occasions.
+        </p>
+        <aside>
+          <h3>Quality Cookies</h3>
+          <details>
+            <summary>Whats the special about your cakes and cookies?</summary>
+            <p>
+              Our cakes and cookies at The Sugar Rush Bakery stand out for their
+              rich flavors, made from scratch using premium ingredients. We
+              blend traditional recipes with creative twists, ensuring every
+              bite is a delightful experience, whether it's a classic favorite
+              or a unique, custom creation.
+            </p>
+          </details>
+        </aside>
+      </article>
+      <hr />
+
+      <article id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="row">
+          <div class="column">
+            <table>
+              <!-- <caption>Our Varities of Cookies</caption> -->
+              
+              <tr>
+                <th colspan="2"><i>Cupcakes</i></th>
+                
+              </tr>
+              <tr>
+                <td>Vanilla Cake</td>
+                <td>Rs 45/-</td>
+              </tr>
+
+              <tr>
+                <td>Chocolate Cake</td>
+                <td rowspan="3">Rs 40/-</td>
+              </tr>
+              <tr>
+                <td>Cherry Cake</td>
+                
+              </tr>
+              <tr>
+                <td>Blueberry Cake</td>
+                
+              </tr>
+              <tr>
+                <td>Strawberry Cake</td>
+                <td>Rs 50/-</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="column">
+            <table>
+                <!-- <caption>Our Varities of Cookies</caption> -->
+                
+                <tr>
+                  <th colspan="2"><i>Drinks</i></th>
+                  
+                </tr>
+                <tr>
+                  <td>Fresh Juice</td>
+                  <td rowspan="2">Rs 35/-</td>
+                </tr>
+  
+                <tr>
+                  <td>Matcha Latte</td>
+                </tr>
+                <tr>
+                  <td>Coffee</td>
+                  <td rowspan="2">Rs 40/-</td>
+                </tr>
+                <tr>
+                  <td>Caramel Mocca</td>
+                  
+                </tr>
+                <tr>
+                  <td>Refreshing Drinks</td>
+                  <td>Rs 50/-</td>
+                </tr>
+              </table>
+          </div>
+        </div>
+        
+        <table border>
+          <!-- <caption>Our Varities of Cookies</caption> -->
+          <tr aria-colspan="2">
+            
+          </tr>
+          <tr>
+            <th colspan="2"><i>Desserts</i></th>
+            
+          </tr>
+          <tr>
+            <td>Vanilla icecream</td>
+            <td>Rs 50/-</td>
+          </tr>
+
+          <tr>
+            <td>Chocolate icecream</td>
+            <td>Rs 60/-</td>
+          </tr>
+          <tr>
+            <td>Cherry icecream</td>
+            <td rowspan="2">Rs 50/-</td>
+          </tr>
+          <tr>
+            <td>Blueberry icecream</td>
+          </tr>
+          <tr>
+            <td>Strawberry icecream</td>
+            <td>Rs 70/-</td>
+          </tr>
+        </table>
+
+
+
+        <br>
+        <p>
+            <a href="#">Back To Top </a>
+        </p>
+
+
+
+      </article>
+    </main>
+    <hr />
+    <footer>
+      <p>Copyright &copy; The Sugar Rush Bakery</p>
+    </footer>
+  </body>
+</html>
